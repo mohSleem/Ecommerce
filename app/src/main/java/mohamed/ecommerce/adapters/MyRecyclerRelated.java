@@ -32,7 +32,6 @@ import mohamed.ecommerce.views.OnItemClickListener;
 
 public class MyRecyclerRelated extends RecyclerView.Adapter<MyRecyclerRelated.CustomViewHolder> implements OnItemClickListener {
     private List<Detail> detailList;
-    private List<Detail> feedItemListFiltered;
     private Context mContext;
     private OnItemClickListener onItemClickListener;
     private int AD_TYPE = 0;
@@ -40,7 +39,6 @@ public class MyRecyclerRelated extends RecyclerView.Adapter<MyRecyclerRelated.Cu
 
     public MyRecyclerRelated(Context context, List<Detail> detailList, OnItemClickListener onItemClickListener) {
         this.detailList = detailList;
-        this.feedItemListFiltered = detailList;
         this.mContext = context;
         this.onItemClickListener = onItemClickListener;
     }
