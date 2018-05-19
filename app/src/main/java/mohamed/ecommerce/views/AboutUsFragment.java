@@ -58,6 +58,7 @@ public class AboutUsFragment extends Fragment {
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adapter);
 
+
     }
 
 
