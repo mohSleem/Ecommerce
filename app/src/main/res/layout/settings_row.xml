@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/settingsLinearLayoutStyle">
+    <TextView
+        android:id="@+id/titleView"
+        style="@style/settingsTextViewStyle"
+        tools:text="@string/turn_on_off_notifications" />
+
+    <ImageView
+        android:id="@+id/title_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</LinearLayout>
