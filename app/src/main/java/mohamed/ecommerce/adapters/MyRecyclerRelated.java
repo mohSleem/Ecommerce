@@ -34,8 +34,6 @@ public class MyRecyclerRelated extends RecyclerView.Adapter<MyRecyclerRelated.Cu
     private List<Detail> detailList;
     private Context mContext;
     private OnItemClickListener onItemClickListener;
-    private int AD_TYPE = 0;
-    private int CONTENT_TYPE = 1;
 
     public MyRecyclerRelated(Context context, List<Detail> detailList, OnItemClickListener onItemClickListener) {
         this.detailList = detailList;
@@ -46,13 +44,6 @@ public class MyRecyclerRelated extends RecyclerView.Adapter<MyRecyclerRelated.Cu
     @Override
     public int getItemCount() {
         return (null != detailList ? detailList.size() : 0);
-    }
-
-    @Override
-    public int getItemViewType(int position) {
-        if (position % 12 == 10)
-            return AD_TYPE;
-        return CONTENT_TYPE;
     }
 
     @Override
