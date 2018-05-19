@@ -6,4 +6,7 @@
     <color name="white">#fff</color>
     <color name="backgroundItem">#FFECEBEC</color>
     <color name="addToCartButton">#2f734b</color>
+
+    <color name="loginBackground">#e655628f</color>
+
 </resources>
