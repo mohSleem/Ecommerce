@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_2sdp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/rv_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_190sdp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:elevation="3dp"
+            android:focusable="true"
+            card_view:cardCornerRadius="@dimen/_2sdp"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/LL_image_related"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    android:background="#e7e7e7">
+
+                    <ImageView
+                        android:id="@+id/rv_product_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/rv_add_to_cart"
+                    android:layout_below="@id/LL_image_related"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_4sdp">
+
+                    <TextView
+                        android:id="@+id/rv_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="woo sample #4"
+                        android:textColor="#000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:text="$17:00"
+                            android:textSize="12sp"
+                            android:layout_alignParentLeft="true" />
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:textColor="#464646"
+                            android:id="@+id/over_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/price"
+                            android:gravity="center"
+                            android:text="$15:00"
+                            android:layout_toRightOf="@+id/price" />
+
+                        <ToggleButton
+                            android:id="@+id/rv_add_to_fav"
+                            android:gravity="center"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="11dp"
+                            android:background="@drawable/un_fav"
+                            android:textOff=""
+                            android:textOn=""
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/_3sdp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/rv_add_to_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:background="@drawable/bg_buttons"
+                    android:text="add to cart"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:id="@+id/btn_sale"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#5a8ded"
+                    android:text="sale"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_8sdp" />
+
+                <Button
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_featured"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="15dp"
+                    android:layout_alignEnd="@+id/btn_sale"
+                    android:layout_alignRight="@+id/btn_sale"
+                    android:layout_below="@+id/btn_sale"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="#5a8ded"
+                    android:text="featured"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+</LinearLayout>
