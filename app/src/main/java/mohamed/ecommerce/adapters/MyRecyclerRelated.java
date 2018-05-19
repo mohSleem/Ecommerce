@@ -19,16 +19,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-
 import com.squareup.picasso.Picasso;
-
 
 import java.util.List;
 
 import mohamed.ecommerce.R;
 import mohamed.ecommerce.modules.Detail;
 import mohamed.ecommerce.views.OnItemClickListener;
-
 
 public class MyRecyclerRelated extends RecyclerView.Adapter<MyRecyclerRelated.CustomViewHolder> implements OnItemClickListener {
     private List<Detail> detailList;
