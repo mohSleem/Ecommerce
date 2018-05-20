@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-  >
+    >
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="item_offset">10dp</dimen>
     <dimen name="detail_backdrop_height">250dp</dimen>
@@ -19,4 +19,7 @@
     <dimen name="fav_width">20dp</dimen>
     <dimen name="fav_height">30dp</dimen>
     <dimen name="ic_album_overflow_margin_top">10dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="med_margin">16dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
 </resources>

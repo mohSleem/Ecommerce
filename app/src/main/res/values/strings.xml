@@ -5,7 +5,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="settings">settings</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
@@ -27,4 +27,12 @@
         The interests of our customers are always the top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.</string>
 
 
+
+    <!-- String for Start Activity ( Login and Register )  -->
+
+    <string name="enter_email">Enter Your Email</string>
+    <string name="enter_pass">Enter Your Password</string>
+    <string name="loginBtn">Sign In</string>
+    <string name="registerFromLogin">Don\'t have an account ? Register Now</string>
+    <string name="invalidData">Invalid Login Data</string>
 </resources>
