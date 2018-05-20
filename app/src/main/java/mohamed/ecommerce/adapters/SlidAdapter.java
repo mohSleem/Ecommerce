@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import mohamed.ecommerce.R;
 
@@ -40,21 +43,13 @@ public class SlidAdapter extends PagerAdapter {
         View myImageLayout = inflater.inflate(R.layout.slide, view, false);
         final ImageView myImage = myImageLayout
                 .findViewById(R.id.image);
-        myImage.setImageResource(images.get(position));
 
-        // TODO ... not work ... Error
-//        myImageLayout.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v){
-//                dialog.show();
-//                WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-//                lp.copyFrom(dialog.getWindow().getAttributes());
-//                lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-//                lp.height = WindowManager.LayoutParams.MATCH_PARENT;
-//                dialog.getWindow().setAttributes(lp);
-//                Log.i(TAG, "This page was clicked: " );
-//            }
-//        });
-////        dialog.cancel();
+        Picasso.with(mContext)
+                .load(images.get(position))
+                .noFade().resize(250, 250)
+                .centerCrop().into(myImage);
+
+        //handle click listener
         view.addView(myImageLayout, 0);
         return myImageLayout;
     }
